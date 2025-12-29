@@ -1,0 +1,1205 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        html, body {
+            overflow-x: hidden; /* disables horizontal scrolling */
+            overflow-y: auto; /* allows vertical scrolling */
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+    </style>
+
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
+
+<style>
+</style>
+
+
+
+
+
+
+
+
+
+<div class="top-border">
+
+    <a href=""> <img class="Logo" src="C:\Users\Krystal\Downloads\Logofinalll.png" /></a>
+
+    <style>
+
+        .Logo {
+            position: absolute;
+            width: 200px;
+            height: 110px;
+            top: -15px;
+        }
+
+
+        @media (max-width: 768px) {
+            .Logo {
+                width: 30%;
+                height: 110px;
+            }
+        }
+
+
+        @media (max-width: 480px) {
+            .Logo {
+                width: 100px;
+                height: 80px;
+                top: 10px;
+            }
+        }
+    </style>
+
+
+
+
+</div>
+
+
+
+<style>
+
+
+    /* Base (desktop first) */
+    .top-border {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background-color: black;
+    }
+
+    /* Tablet */
+    @media (max-width: 1024px) {
+        .top-border {
+            height: 100px;
+        }
+    }
+
+    /* Large phones */
+    @media (max-width: 768px) {
+        .top-border {
+            height: 110px;
+        }
+    }
+
+    /* Small phones */
+    @media (max-width: 480px) {
+        .top-border {
+            height: 110px;
+        }
+    }
+
+
+
+    @media (max-width: 414px) {
+        .top-border {
+            height: 110px;
+        }
+    }
+
+
+    @media (max-width: 375px) {
+        .top-border {
+            height: 110px;
+        }
+    }
+</style>
+
+
+
+
+
+
+<img class="bkgrndtop" src="C:\Users\Krystal\Downloads\bckgrndweb.jpg" />
+
+
+
+<style>
+
+    .bkgrndtop {
+        width: 100vw;
+        height: 700px;
+        top: 20px;
+        left: 0px;
+    }
+</style>
+
+<style>
+    @media (max-width: 425px) {
+
+        .bkgrndtop {
+            width: 100vw;
+            height: 500px;
+        }
+    }
+
+
+    @media (max-width: 375px) {
+
+        .bkgrndtop {
+            width: 120vw;
+            height: 500px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+</style>
+
+
+
+
+
+
+<div class="landing-area">
+    <img class="falling-img" src="C:\Users\Krystal\Downloads\webuildthesiteabsolutefinal.png">
+    <img class="sliding-img" src="C:\Users\Krystal\Downloads\Youbuildthebusinessfinal.png" />
+</div>
+
+
+
+
+
+
+<style>
+    body {
+        margin: 0;
+        min-height: 200vh; /* gives room to see the fall */
+    }
+
+    .falling-img {
+        height: 500px;
+        width: 400px;
+        position: absolute; /* locks relative to viewport */
+        top: 100px; /* final landing position */
+        left: 50%;
+        /* center horizontally */
+
+        font-family: "Times New Roman", serif;
+        font-size: 4rem;
+        color: #094507;
+        animation: fallAndLand 1.5s ease-out forwards;
+    }
+
+    /* animation keyframes */
+    @keyframes fallAndLand {
+        0% {
+            transform: translate(-50%, -150vh); /* start above screen */
+            opacity: 0;
+        }
+
+        70% {
+            transform: translate(-50%, 0); /* reach final position */
+            opacity: 1;
+        }
+
+        85% {
+            transform: translate(-50%, 5%); /* small bounce down */
+        }
+
+        100% {
+            transform: translate(-50%, 0); /* settle at landing */
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+    body {
+        margin: 0;
+        min-height: 200vh; /* gives room for fall */
+    }
+
+    /* Falling text */
+    .falling-text {
+        height: 500px;
+        width: 100px;
+        position: fixed;
+        top: 100px; /* vertical landing */
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: "Times New Roman", serif;
+        font-size: 4rem;
+        color: #094507;
+        animation: fallAndLand 1.5s ease-out forwards;
+    }
+
+    @keyframes fallAndLand {
+        0% {
+            transform: translate(-50%, -150vh);
+            opacity: 0;
+        }
+
+        70% {
+            transform: translate(-50%, 0);
+            opacity: 1;
+        }
+
+        85% {
+            transform: translate(-50%, 10%);
+        }
+
+        100% {
+            transform: translate(-50%, 0);
+        }
+    }
+
+    /* Sliding text */
+
+
+
+
+    .sliding-img {
+        height: 500px;
+        width: 300px;
+        position: absolute;
+        left: 50vw;
+        top: 225px;
+        animation: fadein 2s backwards;
+        animation-delay: 1.5s;
+        transform: translateX(-50%)
+    }
+
+
+
+    @keyframes fadein {
+
+        0% {
+            opacity: 0.0
+        }
+
+        25% {
+            opacity: 0.25
+        }
+
+
+        50% {
+            opacity: 0.5
+        }
+
+        75% {
+            opacity: 0.75
+        }
+
+        100% {
+            opacity: 1
+        }
+    }
+</style>
+
+
+
+
+<style>
+
+
+    @media (max-width: 1024px) {
+        .falling-img {
+            height: 400px;
+            width: 300px;
+            top: 150px;
+        }
+    }
+
+
+
+    @media (max-width: 768px) {
+        .falling-img {
+            height: 350px;
+            width: 250px;
+            top: 175px;
+        }
+    }
+
+
+
+
+    @media (max-width: 425px) {
+        .falling-img {
+            height: 300px;
+            width: 200px;
+            top: 150px;
+        }
+    }
+</style>
+
+
+
+<style>
+
+    @media (max-width: 1024px) {
+        .sliding-img {
+            height: 350px;
+            width: 250px;
+            top: 275px;
+        }
+    }
+
+
+    @media (max-width: 768px) {
+        .sliding-img {
+            height: 300px;
+            width: 200px;
+            top: 275px;
+        }
+    }
+
+
+
+
+    @media (max-width: 425px) {
+        .sliding-img {
+            height: 300px;
+            width: 200px;
+            top: 225px;
+        }
+    }
+</style>
+
+
+
+
+<div class="secondbar"></div>
+
+<style>
+    .secondbar {
+        width: 100vw;
+        left: 0px;
+        height: 100px;
+        background
+    }
+</style>
+
+
+
+
+
+
+
+<img class="deskimg" src="C:\Users\Krystal\Downloads\deskimgrefined.png" />
+
+
+
+
+
+
+
+
+
+
+<style>
+    .deskimg {
+        position: absolute;
+        width: 500px;
+        left: 0px;
+        top: 800px;
+        height: 600px;
+    }
+
+    @media (max-width: 1024px) {
+
+        .deskimg {
+            width: 400px;
+            left: 0px;
+            top: 800px;
+            height: 500px;
+        }
+    }
+
+
+
+    @media (max-width: 768px) {
+
+        .deskimg {
+            width: 350px;
+            left: 0px;
+            top: 800px;
+            height: 450px;
+        }
+    }
+
+    @media (max-width: 425px) {
+
+        .deskimg {
+            width: 150px;
+            left: 0px;
+            top: 550px;
+            height: 200px;
+        }
+    }
+
+    @media (max-width: 375px) {
+
+        .deskimg {
+            width: 150px;
+            left: 0px;
+            top: 550px;
+            height: 200px;
+        }
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+<div class="horizontal-sliding-text">
+    <img id="scrollimg" src="C:\Users\Krystal\OneDrive\Desktop\PLAZA Business\conveyfinal.png" />
+
+
+</div>
+
+
+
+
+
+<style>
+    .horizontal-sliding-text {
+        position: relative;
+        height: 200vh; /* allows scrolling */
+    }
+
+    #scrollimg, .scroll-img {
+        position: absolute;
+        top: -75px;
+        left: 81%;
+        width: 300px;
+        height: 200px;
+        /* start off-screen to the right */
+        transform: translateX(calc(-88.5% + 600px));
+        will-change: transform;
+    }
+</style>
+
+<script>
+    const img = document.getElementById("scrollimg");
+
+    window.addEventListener("scroll", () => {
+        const offset = Math.max(300 - window.scrollY, 0);
+
+        img.style.transform =
+            `translateX(calc(-88.5% + ${offset}px))`;
+    });
+</script>
+
+
+
+
+<style>
+    @media (max-width: 1024px) {
+        #scrollimg {
+            width: 300px;
+            height: 200px;
+            top: -75px;
+            left: 82.5%;
+        }
+    }
+
+
+    @media (max-width: 768px) {
+        #scrollimg {
+            width: 200px;
+            height: 125px;
+            top: -50px;
+            left: 86%;
+        }
+    }
+
+    @media (max-width: 425px) {
+        #scrollimg {
+            width: 100px;
+            height: 50px;
+            top: -50px;
+            left: 75%
+        }
+    }
+
+
+    @media (max-width: 376px) {
+        #scrollimg {
+            width: 120px;
+            height: 50px;
+            top: -65px;
+            left: 81%;
+        }
+    }
+</style>
+
+
+
+
+
+
+
+
+
+<div class="fade-section">
+    <img src="C:\Users\Krystal\OneDrive\Desktop\PLAZA Business\text5final.png" alt="My Image" class="fade-image">
+</div>
+
+
+
+<style>
+    .fade-image {
+        opacity: 0; /* start invisible */
+        transition: opacity 1s ease-in-out, transform 1s ease-out;
+        display: block;
+        margin: 0 auto; /* center image */
+        max-width: 80%;
+        top: 900px;
+        transform: translateY(30px);
+    }
+
+        .fade-image.visible {
+            opacity: 1;
+            top: 700px;
+            transform: translateY(0);
+        }
+
+    .fade-section {
+        position: absolute;
+        top: 925px;
+        left: 56%;
+        width: 400px;
+        height: 300px;
+    }
+</style>
+
+
+
+
+<script>
+    const image = document.querySelector('.fade-image');
+    const section = document.querySelector('.fade-section');
+
+    window.addEventListener('scroll', () => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const sectionBottom = section.getBoundingClientRect().bottom;
+        const windowHeight = window.innerHeight;
+
+        // Check if section is in viewport
+        if (sectionTop < windowHeight && sectionBottom > 0) {
+            image.classList.add('visible'); // fade in
+        } else {
+            image.classList.remove('visible'); // fade out
+        }
+    });
+
+
+
+
+
+
+
+</script>
+
+
+<style>
+
+    @media (max-width: 1024px) {
+
+        .fade-section {
+            position: absolute;
+            width: 500px;
+            height: 400px;
+            top: 900px;
+            left: 47%;
+        }
+    }
+
+
+    @media (max-width: 768px) {
+
+        .fade-section {
+            position: absolute;
+            width: 400px;
+            height: 300px;
+            top: 900px;
+            left: 50%;
+        }
+    }
+
+
+    @media (max-width: 425px) {
+
+        .fade-section {
+            position: absolute;
+            width: 200px;
+            height: 175px;
+            top: 600px;
+            left: 42.5%;
+        }
+    }
+
+
+    @media (max-width: 375px) {
+
+        .fade-section {
+            position: absolute;
+            width: 200px;
+            height: 300px;
+            top: 590px;
+            left: 42%;
+        }
+    }
+</style>
+
+
+
+
+
+
+<div class="fade-section2">
+    <img src="C:\Users\Krystal\OneDrive\Desktop\PLAZA Business\responsive3.png"
+         alt="My Image"
+         class="fade-image2">
+</div>
+
+
+<style>
+
+    .fade-image2 {
+        opacity: 0;
+        transition: opacity 1s ease-in-out, transform 1s ease-out;
+        display: block;
+        margin: 0 auto;
+        max-width: 80%;
+        transform: translateY(30px);
+    }
+
+        .fade-image2.visible2 {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    .fade-section2 {
+        position: absolute;
+        top: 1000px;
+        left: 56%;
+        width: 400px;
+        height: 300px;
+    }
+</style>
+
+
+<script>
+    const image2 = document.querySelector('.fade-image2');
+    const section2 = document.querySelector('.fade-section2');
+
+    window.addEventListener('scroll', () => {
+        const sectionTop = section2.getBoundingClientRect().top;
+        const sectionBottom = section2.getBoundingClientRect().bottom;
+        const windowHeight = window.innerHeight;
+
+        if (sectionTop < windowHeight && sectionBottom > 0) {
+            image2.classList.add('visible2');
+        } else {
+            image2.classList.remove('visible2');
+        }
+    });
+</script>
+
+<style>
+
+    @media (max-width: 1024px) {
+
+        .fade-section2 {
+            position: absolute;
+            width: 500px;
+            height: 400px;
+            top: 900px;
+            left: 47%;
+        }
+    }
+
+
+    @media (max-width: 768px) {
+
+        .fade-section2 {
+            position: absolute;
+            width: 400px;
+            height: 300px;
+            top: 930px;
+            left: 50%;
+        }
+    }
+
+
+    @media (max-width: 425px) {
+
+        .fade-section2 {
+            position: absolute;
+            width: 200px;
+            height: 25px;
+            top: 620px;
+            left: 42%;
+        }
+    }
+
+
+    @media (max-width: 375px) {
+
+        .fade-section2 {
+            position: absolute;
+            width: 200px;
+            height: 375px;
+            top: 610px;
+            left: 42%;
+        }
+    }
+</style>
+
+
+
+
+
+
+
+<div class="fade-section3">
+    <img src="C:\Users\Krystal\OneDrive\Desktop\PLAZA Business\frontttttttt.png"
+         alt="My Image"
+         class="fade-image3">
+</div>
+
+
+<style>
+
+    .fade-image3 {
+        opacity: 0;
+        transition: opacity 1s ease-in-out, transform 1s ease-out;
+        display: block;
+        margin: 0 auto;
+        max-width: 80%;
+        transform: translateY(30px);
+    }
+
+        .fade-image3.visible3 {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    .fade-section3 {
+        position: absolute;
+        top: 1200px;
+        left: 58%;
+        width: 350px;
+        height: 400px;
+        z-index: 5;
+    }
+</style>
+
+
+<script>
+    const image3 = document.querySelector('.fade-image3');
+    const section3 = document.querySelector('.fade-section3');
+
+    window.addEventListener('scroll', () => {
+        const sectionTop = section3.getBoundingClientRect().top;
+        const sectionBottom = section3.getBoundingClientRect().bottom;
+        const windowHeight = window.innerHeight;
+
+        if (sectionTop < windowHeight && sectionBottom > 0) {
+            image3.classList.add('visible3');
+        } else {
+            image3.classList.remove('visible3');
+        }
+    });
+</script>
+
+
+
+
+
+<style>
+    @media (max-width: 1024px) {
+
+        .fade-section3 {
+            position: absolute;
+            top: 1110px;
+            left: 50%;
+            width: 450px;
+            height: 500px;
+            z-index: 5;
+        }
+    }
+
+
+
+    @media (max-width: 768px) {
+
+        .fade-section3 {
+            position: absolute;
+            top: 1110px;
+            left: 53%;
+            width: 350px;
+            height: 400px;
+            z-index: 5;
+        }
+    }
+
+
+    @media (max-width: 425px) {
+
+        .fade-section3 {
+            position: absolute;
+            top: 700px;
+            left: 42.5%;
+            width: 200px;
+            height: 250px;
+            z-index: 5;
+        }
+    }
+
+
+
+
+    @media (max-width: 376px) {
+
+        .fade-section3 {
+            position: absolute;
+            top: 700px;
+            left: 45%;
+            width: 175px;
+            height: 225px;
+            z-index: 5;
+        }
+    }
+</style>
+
+
+
+
+<div class="fade-section4">
+    <img src="C:\Users\Krystal\OneDrive\Desktop\PLAZA Business\why we build.png"
+         alt="My Image"
+         class="fade-image4">
+</div>
+
+
+<style>
+
+    .fade-image4 {
+        opacity: 0;
+        transition: opacity 1s ease-in-out, transform 1s ease-out;
+        display: block;
+        margin: 0 auto;
+        max-width: 80%;
+        transform: translateY(30px);
+    }
+
+        .fade-image4.visible4 {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    .fade-section4 {
+        position: absolute;
+        top: 1825px;
+        left: -5%;
+        width: 650px;
+        height: 700px;
+        z-index: 5;
+    }
+</style>
+
+
+<script>
+    const image4 = document.querySelector('.fade-image4');
+    const section4 = document.querySelector('.fade-section4');
+
+    window.addEventListener('scroll', () => {
+        const sectionTop = section4.getBoundingClientRect().top;
+        const sectionBottom = section4.getBoundingClientRect().bottom;
+        const windowHeight = window.innerHeight;
+
+        if (sectionTop < windowHeight && sectionBottom > 0) {
+            image4.classList.add('visible4');
+        } else {
+            image4.classList.remove('visible4');
+        }
+    });
+</script>
+
+<style>
+    @media (max-width: 1024px) {
+
+        .fade-section4 {
+            position: absolute;
+            top: 1800px;
+            left: 3%;
+            width: 600px;
+            height: 500px;
+            z-index: 5;
+        }
+    }
+
+
+
+    @media (max-width: 768px) {
+
+        .fade-section4 {
+            position: absolute;
+            top: 1500px;
+            left: -7%;
+            width: 600px;
+            height: 500px;
+            z-index: 5;
+        }
+    }
+
+
+    @media (max-width: 425px) {
+
+        .fade-section4 {
+            position: absolute;
+            top: 1500px;
+            left: -7%;
+            width: 600px;
+            height: 500px;
+            z-index: 5;
+        }
+    }
+
+
+    @media (max-width: 376px) {
+
+        .fade-section4 {
+            position: absolute;
+            top: 1000px;
+            left: -8%;
+            width: 200px !important;
+            height: 100px !important;
+            z-index: 5;
+        }
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="fade-section5">
+    <img src="C:\Users\Krystal\OneDrive\Desktop\PLAZA Business\Why we build text.png"
+         alt="My Image"
+         class="fade-image5">
+</div>
+
+
+<style>
+
+    .fade-image5 {
+        opacity: 0;
+        transition: opacity 1s ease-in-out, transform 1s ease-out;
+        display: block;
+        margin: 0 auto;
+        max-width: 80%;
+        transform: translateY(30px);
+    }
+
+        .fade-image5.visible5 {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    .fade-section5 {
+        position: absolute;
+        top: 1600px;
+        left: 45%;
+        width: 750px;
+        height: 1000px;
+        z-index: 5;
+    }
+</style>
+
+
+<script>
+    const image5 = document.querySelector('.fade-image5');
+    const section5 = document.querySelector('.fade-section5');
+
+    window.addEventListener('scroll', () => {
+        const sectionTop = section5.getBoundingClientRect().top;
+        const sectionBottom = section5.getBoundingClientRect().bottom;
+        const windowHeight = window.innerHeight;
+
+        if (sectionTop < windowHeight && sectionBottom > 0) {
+            image5.classList.add('visible5');
+        } else {
+            image5.classList.remove('visible5');
+        }
+    });
+</script>
+
+
+
+
+    <img class="middlebar" src="C:\Users\Krystal\Downloads\bckgrndweb.jpg" />
+
+
+
+<style>
+    .middlebar {
+        position: absolute;
+        width: 100%;
+        height: 125px;
+        top: 1400px;
+        left:0%
+    }
+
+    @media (max-width: 1024px) {
+
+        .middlebar {
+            position: absolute;
+            top: 1500px;
+            left: -7%;
+            width: 100%;
+            height: 150px;
+            z-index: 5;
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        .middlebar {
+            position: absolute;
+            top: 1500px;
+            left: -7%;
+            width: 600px;
+            height: 500px;
+            z-index: 5;
+        }
+    }
+
+    @media (max-width: 425px) {
+
+        .middlebar {
+            position: absolute;
+            top: 1500px;
+            left: -7%;
+            width: 600px;
+            height: 500px;
+            z-index: 5;
+        }
+
+        @media (max-width: 376px) {
+
+            .middlebar {
+                position: absolute;
+                top: 775px;
+                left: -7%;
+                width: 100%;
+                height: 80px;
+                z-index: 5;
+                left:0%
+            }
+        }
+
+        
+
+
+</style>
+
+
+<style>
+  @media (max-width: 1024px) {
+
+      .fade-section5 {
+          position: absolute;
+          top: 1500px;
+          left: -7%;
+          width: 600px;
+          height: 500px;
+          z-index: 5;
+      }
+  }
+
+
+
+
+    @media (max-width: 768px) {
+
+        .fade-section5 {
+            position: absolute;
+            top: 1500px;
+            left: -7%;
+            width: 600px;
+            height: 500px;
+            z-index: 5;
+        }
+    }
+
+    @media (max-width: 425px) {
+
+        .fade-section5 {
+            position: absolute;
+            top: 1500px;
+            left: -7%;
+            width: 600px;
+            height: 500px;
+            z-index: 5;
+        }
+    }
+
+    @media (max-width: 376px) {
+
+        .fade-section5 {
+            position: absolute;
+            top: 900px;
+            left: 30%;
+            width: 300px;
+            height: 200px;
+            z-index: 5;
+        }
+    }
+
+</style>
