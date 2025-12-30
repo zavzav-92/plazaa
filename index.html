@@ -167,9 +167,22 @@
 
     .bkgrndtop {
         width: 100vw;
-        height: 900px;
+        height: 1100px;
         top: 20px;
         left: 0px;
+    }
+
+
+
+    @media (max-width: 360px) {
+
+        .bkgrndtop {
+            width: 100vw;
+            height: 1500px;
+            top: 20px;
+            left: 0px;
+        }
+
     }
 </style>
 
@@ -212,6 +225,19 @@
         font-size: 4rem;
         color: #094507;
         animation: fallAndLand 1.5s ease-out forwards;
+    }
+
+
+    @media (max-width: 360px) {
+
+        .falling-img {
+            height: 30rem;
+            width: 20rem;
+            position: absolute; /* locks relative to viewport */
+            top: 350px; /* final landing position */
+            left: 50%
+        }
+
     }
 
     /* animation keyframes */
@@ -300,31 +326,40 @@
         transform: translateX(-50%)
     }
 
+    @media (max-width: 360px) {
 
-
-    @keyframes fadein {
-
-        0% {
-            opacity: 0.0
+        .sliding-img {
+            height: 30rem;
+            width: 20rem;
+            position: absolute; /* locks relative to viewport */
+            top: 450px; /* final landing position */
+            left: 50%
         }
 
-        25% {
-            opacity: 0.25
-        }
+
+        @keyframes fadein {
+
+            0% {
+                opacity: 0.0
+            }
+
+            25% {
+                opacity: 0.25
+            }
 
 
-        50% {
-            opacity: 0.5
-        }
+            50% {
+                opacity: 0.5
+            }
 
-        75% {
-            opacity: 0.75
-        }
+            75% {
+                opacity: 0.75
+            }
 
-        100% {
-            opacity: 1
+            100% {
+                opacity: 1
+            }
         }
-    }
 </style>
 
 
@@ -346,7 +381,7 @@
         width: 100vw;
         left: 0px;
         height: 100px;
-        background
+        
     }
 </style>
 
@@ -381,6 +416,18 @@
         height: auto;
     }
 
+    @media (max-width: 360px) {
+        .deskimg {
+            position: absolute;
+            left: 0rem;
+            top: 1250px;
+            width: 400px;
+            height: 500px;
+            
+        }
+
+
+    }
 
     </style>
 
@@ -427,7 +474,22 @@
 
 
 
+
 }
+
+    @media (max-width: 360px) {
+
+        #scrollimg {
+            position: absolute;
+            top: -325px;
+            right: -9rem;
+            width: 225px;
+            height: 125px;
+          
+        }
+
+
+    }
     
 </style>
 
@@ -502,8 +564,12 @@
 
     @media (max-width: 425px) {
         .fade-section {
-            top: 5rem;
-            width: clamp(140px, 12vw, 130px);
+            top: 1400px;
+            right: -2rem;
+            width: 400px;
+            height: 400px;
+
+            
         }
     }
 </style>
@@ -575,6 +641,21 @@
         height: 400px;
         z-index: 2;
     }
+
+    @media (max-width: 360px) {
+
+        .fade-section2 {
+
+            position: absolute;
+            right: -2rem;
+            width: 400px;
+            height: 400px;
+            top: 1425px;
+
+
+        }
+
+    }
 </style>
 
 
@@ -635,6 +716,19 @@
         width: 450px;
         height: 500px;
         z-index: 2;
+    }
+
+
+    @media (max-width: 360px) {
+
+        .fade-section3 {
+            position: absolute;
+            right: -1rem;
+            width:  350px;
+            height: 350px;
+            
+        }
+
     }
 </style>
 
