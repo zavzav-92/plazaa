@@ -75,10 +75,133 @@
                 top: 10px;
             }
         }
+
+        @media (max-width: 361px) {
+            .Logo {
+                width: 125px;
+                height: 100px;
+                top: 10px;
+            }
+        }
+
+
+        @media (max-width: 426px) {
+            .Logo {
+                width: 125px;
+                height: 100px;
+                top: 10px;
+            }
+        }
+
+
+
     </style>
 
+    
 
 
+<a href=""> <img id="contactbutton" src="contactus1.png" /></a>
+
+
+
+    <style>
+        #contactbutton {
+            position: absolute;
+            top: 30px;
+            left: 900px;
+            width: 160px;
+            height: 40px;
+            border-radius: 10px;
+            background-color: darkslategrey;
+            transition: opacity 0.1s ease;
+            
+        }   
+     </style>
+
+
+
+    <script>
+
+        const button = document.getElementById("contactbutton");
+
+        contactbutton.addEventListener("mouseenter", () => {
+            contactbutton.style.opacity = "0.5";
+        });
+
+        contactbutton.addEventListener("mouseleave", () => {
+            contactbutton.style.opacity = "1";
+        });
+
+
+
+    </script>
+
+
+ <style>
+
+     @media (max-width: 1024px) {
+
+         #contactbutton {
+             position: absolute;
+             top: 30px;
+             left: 750px;
+             width: 160px;
+             height: 40px;
+             border-radius: 10px;
+             background-color: darkslategrey;
+         }
+
+     }
+
+
+     @media (max-width: 768px) {
+
+         #contactbutton {
+             position: absolute;
+             top: 140px;
+             left: 500px;
+             width: 160px;
+             height: 40px;
+             border-radius: 10px;
+             background-color: darkslategrey;
+         }
+     }
+     @media (max-width: 426px) {
+
+         #contactbutton {
+             position: absolute;
+             top: 140px;
+             left: 225px;
+             width: 130px;
+             height: 40px;
+             border-radius: 10px;
+             background-color: darkslategrey;
+         }
+     }
+
+
+     @media (max-width: 361px) {
+
+         #contactbutton {
+             position: absolute;
+             top: 140px;
+             left: 200px;
+             width: 130px;
+             height: 40px;
+             border-radius: 10px;
+             background-color: darkslategrey;
+         }
+     }
+
+
+
+
+
+
+
+ </style>
+
+  
 
 </div>
 
@@ -111,6 +234,16 @@
 
         }
 
+    }
+
+    @media (max-width: 426px) {
+
+        .top-border {
+            position: absolute;
+            height: 50px !important;
+            width: 100%;
+            top: -110px;
+        }
     }
 
 
@@ -210,11 +343,12 @@
 
 
 
-    @media (max-width: 425px) {
+    @media (max-width: 426px) {
 
         .bkgrndtop {
             width: 100vw;
             height: 500px;
+           left: 0% !important;
         }
     }
 
@@ -446,11 +580,31 @@
 
 
 
-    @media (max-width: 425px) {
+    @media (max-width: 426px) {
         .falling-img {
             height: 300px;
-            width: 200px;
+            width: 400px !important;
             top: 150px;
+        }
+    }
+
+
+    @media (max-width: 376px) {
+        .falling-img {
+            height: 500px !important;
+            width: 400px !important;
+            top: 150px;
+        }
+    }
+
+
+    @media (max-width: 320px) {
+        .falling-img {
+            height: 400px !important;
+            width: 300px !important;
+            top: 150px;
+            left: 50%;
+            transform: translateX(-50%)
         }
     }
 </style>
@@ -489,6 +643,8 @@
     }
 
 
+  
+
 
 
 
@@ -497,18 +653,28 @@
         .sliding-img {
             height: 400px;
             width: 300px;
-            top: 275px;
+            top: 275px !important;
         }
     }
 
 
 
 
-    @media (max-width: 425px) {
+    @media (max-width: 426px) {
         .sliding-img {
-            height: 300px;
-            width: 200px;
-            top: 225px;
+            position: absolute;
+            height: 400px !important;
+            width: 300px !important;
+            top: 450px !important;
+        }
+    }
+
+
+    @media (max-width: 376px) {
+        .sliding-img {
+            height: 400px !important;
+            width: 300px !important;
+            top: 450px !important;
         }
     }
 </style>
@@ -605,23 +771,24 @@
         }
     }
 
-    @media (max-width: 425px) {
+    @media (max-width: 426px) {
 
         .deskimg {
-            width: 150px;
+            width: 450px;
             left: 0px;
-            top: 550px;
-            height: 200px;
+            top: 1000px !important;
+            height: 600px;
+            z-index: 1;
         }
     }
 
-    @media (max-width: 375px) {
+    @media (max-width: 376px) {
 
         .deskimg {
-            width: 150px;
+            width: 500px !important;
             left: 0px;
-            top: 550px;
-            height: 200px;
+            top: 1000px !important;
+            height: 575px !important;
         }
     }
 </style>
@@ -690,7 +857,8 @@
         #scrollimg {
             position: absolute;
             left: 86% !important;
-            top: 875px !important;
+            top: 825px !important;
+            z-index: 2;
             
 
 
@@ -720,21 +888,21 @@
         }
     }
 
-    @media (max-width: 425px) {
+    @media (max-width: 426px) {
         #scrollimg {
-            width: 100px;
-            height: 50px;
-            top: -50px;
-            left: 75%
+            width: 200px;
+            height: 100px;
+            top: 950px !important;
+            left: 70%
         }
     }
 
 
     @media (max-width: 376px) {
         #scrollimg {
-            width: 120px;
-            height: 50px;
-            top: -65px;
+            width: 200px !important;
+            height: 100px !important;
+            top: 950px !important;
             left: 81%;
         }
     }
@@ -836,6 +1004,7 @@
             height: 400px;
             top: 1140px;
             left: 47%;
+            z-index: 2;
         }
     }
            
@@ -870,26 +1039,26 @@
     }
 
 
-    @media (max-width: 425px) {
+    @media (max-width: 426px) {
 
         .fade-section {
             position: absolute;
-            width: 200px;
-            height: 175px;
-            top: 600px;
-            left: 42.5%;
+            width: 400px;
+            height: 300px;
+            top: 1150px;
+            left: 20%;
         }
     }
 
 
-    @media (max-width: 375px) {
+    @media (max-width: 376px) {
 
         .fade-section {
             position: absolute;
-            width: 200px;
-            height: 300px;
-            top: 590px;
-            left: 42%;
+            width: 350px !important;
+            height: 350px !important;
+            top: 1150px !important;
+            left: 20% !important;
         }
     }
 
@@ -940,6 +1109,7 @@
         left: 56%;
         width: 400px;
         height: 300px;
+        z-index: 2;
     }
 </style>
 
@@ -999,26 +1169,26 @@
     }
 
 
-    @media (max-width: 425px) {
+    @media (max-width: 426px) {
 
         .fade-section2 {
             position: absolute;
-            width: 200px;
-            height: 25px;
-            top: 620px;
-            left: 42%;
+            width: 400px;
+            height: 300px;
+            top: 1175px !important;
+            left: 20%;
         }
     }
 
 
-    @media (max-width: 375px) {
+    @media (max-width: 376px) {
 
         .fade-section2 {
             position: absolute;
-            width: 200px;
-            height: 375px;
-            top: 610px;
-            left: 42%;
+            width: 350px !important;
+            height: 525px !important;
+            top: 1175px !important;
+            left: 20% !important;
         }
     }
     @media (max-width: 361px) {
@@ -1079,7 +1249,7 @@
         left: 58%;
         width: 350px;
         height: 400px;
-        z-index: 5;
+        z-index: 2;
     }
 </style>
 
@@ -1148,14 +1318,14 @@
     }
 
 
-    @media (max-width: 425px) {
+    @media (max-width: 426px) {
 
         .fade-section3 {
             position: absolute;
-            top: 700px;
-            left: 42.5%;
-            width: 200px;
-            height: 250px;
+            top: 1340px !important;
+            left: 20%;
+            width: 400px;
+            height: 300px;
             z-index: 5;
         }
     }
@@ -1167,10 +1337,10 @@
 
         .fade-section3 {
             position: absolute;
-            top: 700px;
-            left: 45%;
-            width: 175px;
-            height: 225px;
+            top: 1340px !important;
+            left: 26% !important;
+            width: 300px !important;
+            height: 200px !important;
             z-index: 5;
         }
     }
@@ -1292,14 +1462,14 @@
     }
 
 
-    @media (max-width: 425px) {
+    @media (max-width: 426px) {
 
         .fade-section4 {
             position: absolute;
-            top: 1500px;
-            left: -7%;
-            width: 600px;
-            height: 500px;
+            top: 1600px !important;
+            left: 16% !important;
+            width: 300px;
+            height: 200px;
             z-index: 5;
         }
     }
@@ -1309,10 +1479,10 @@
 
         .fade-section4 {
             position: absolute;
-            top: 1000px;
-            left: -8%;
-            width: 200px !important;
-            height: 100px !important;
+            top: 1600px !important;
+            left: 10% !important;
+            width: 300px !important;
+            height: 200px !important;
             z-index: 5;
         }
     }
@@ -1472,15 +1642,16 @@
         }
     }
 
-    @media (max-width: 425px) {
+    @media (max-width: 426px) {
 
         .middlebar {
             position: absolute;
-            top: 1500px;
-            left: -7%;
-            width: 600px;
-            height: 500px;
+            top: 1500px !important;
+            left: 0% !important;
+            width: 100%;
+            height: 100px;
             z-index: 5;
+            t
         }
 
         @media (max-width: 376px) {
@@ -1559,14 +1730,14 @@
         }
     }
 
-    @media (max-width: 425px) {
+    @media (max-width: 426px) {
 
         .fade-section5 {
             position: absolute;
-            top: 1500px;
-            left: -7%;
-            width: 600px;
-            height: 500px;
+            top: 1650px !important;
+            left: -5% !important;
+            width: 500px;
+            height: 400px;
             z-index: 5;
         }
     }
@@ -1575,10 +1746,10 @@
 
         .fade-section5 {
             position: absolute;
-            top: 900px;
-            left: 30%;
-            width: 300px;
-            height: 200px;
+            top: 1650px !important;
+            left: -12% !important;
+            width: 500px;
+            height: 400px;
             z-index: 5;
         }
     }
@@ -1602,7 +1773,6 @@
     
 
 </style>
-
 
 
 
